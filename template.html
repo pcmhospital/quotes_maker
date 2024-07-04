@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote Image</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 1080px;
+      width: 1080px;
+      background-image: url("{{backgroundUrl}}");
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .container {
+      text-align: center;
+      padding: 20px;
+    }
+    .quote {
+      font-size: 50px;
+      margin: 20px;
+    }
+    .author {
+      font-size: 30px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="quote">{{quote}}</div>
+    <div class="author">- {{author}}</div>
+  </div>
+</body>
+</html>
